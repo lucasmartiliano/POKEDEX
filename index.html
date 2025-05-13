@@ -23,13 +23,13 @@
 
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="assets/css/global.css" />
-    <link rel="stylesheet" href="assets/css/pokedex.css">
+    <link rel="stylesheet" href="assets/css/pokedex.css" />
   </head>
   <body>
     <section>
       <h1>Pokedex</h1>
 
-      <ol class="pokemons">
+      <ol id="pokemonList" class="pokemons">
         <li class="pokemon">
           <span class="number">#001</span>
           <span class="name">Bulbasaur</span>
@@ -39,44 +39,17 @@
               <li class="type">poison</li>
             </ol>
             <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/1.png"
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/4.png"
               alt="Bulbasaur"
             />
           </div>
         </li>
-
-        <li class="pokemon">
-          <span class="number">#002</span>
-          <span class="name">Ivisaur</span>
-          <div class="detail">
-            <ol class="types">
-              <li class="type">grass</li>
-              <li class="type">poison</li>
-            </ol>
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/2.png"
-              alt="Bulbasaur"
-            />
-          </div>
-        </li>
-
-        <li class="pokemon">
-          <span class="number">#003</span>
-          <span class="name">Venusaur</span>
-          <div class="detail">
-            <ol class="types">
-              <li class="type">grass</li>
-              <li class="type">poison</li>
-            </ol>
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/3.png"
-              alt="Bulbasaur"
-            />
-          </div>
-        </li>
+        <!-- ....Pokemons here ....-->
       </ol>
     </section>
     <!-- Nosso JS -->
+    <script src="assets/js/pokemon-model.js"></script>
+    <script src="assets/js/poke-api.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
